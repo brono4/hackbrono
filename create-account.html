@@ -1,0 +1,80 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <style>
+body {
+  background-image: url("ho.jpg");
+  background-color: #4CAF50;
+  color: white;
+  padding: 70px;
+  
+  /* New properties */
+  background-size: cover; /* Makes the image cover the whole background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 50%;
+}
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .link {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Create Account</h2>
+    <form method="POST" action="login.html">
+    <form id="createAccountForm">
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <input type="password" id="password" placeholder="Create a password" required>
+      <button type="submit">Create Account</button>
+    </form>
+    <div class="link">
+      <a href="login.html">Already have an account? Login here</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('createAccountForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      console.log(`Creating account for ${name} with email ${email}`);
+      // Add your account creation logic here
+    });
+  </script>
+</body>
+</html>
+
+

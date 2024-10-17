@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn How to Create a Vulnerability Report</title>
+
+    <style>
+        body {
+          background-image: url("sca.jpg");
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .code-block {
+            background-color: #f1f1f1;
+            border-left: 5px solid #444;
+            padding: 10px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        input[type="file"] {
+            margin-top: 10px;
+        }
+        .btn-submit {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        .btn-submit:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Learning How to Create a Vulnerability Report</h1>
+
+        <div class="section">
+            <h2>Introduction to Vulnerability Reporting</h2>
+            <p>Writing a detailed and structured vulnerability report is an essential skill for any security researcher. A well-written report not only helps the responsible party understand the issue but also enables them to remediate the vulnerability quickly and efficiently. This guide will walk you through the steps needed to create a professional report.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Components of a Good Report</h2>
+            <ul>
+                <li><strong>Description:</strong> Provide a clear and concise explanation of the vulnerability.</li>
+                <li><strong>Summary:</strong> Offer a brief summary of the issue and its potential impact.</li>
+                <li><strong>Steps to Reproduce:</strong> Outline a step-by-step guide to help others replicate the vulnerability.</li>
+                <li><strong>Supporting Material/References:</strong> Include any screenshots, logs, or files that support your findings.</li>
+                <li><strong>Remediation Suggestions:</strong> (Optional) Suggest ways to fix or mitigate the vulnerability.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Example Report Template</h2>
+            <p>Below is an example report template. Follow the structure and fill in the necessary details when reporting a vulnerability.</p>
+
+            <div class="code-block">
+                <strong>Description:</strong> <br>
+                [Provide a clear explanation of the vulnerability]<br><br>
+                <strong>Summary:</strong> <br>
+                [Provide a brief overview of the vulnerability and its impact]<br><br>
+                <strong>Steps to Reproduce:</strong> <br>
+                1. [Describe step 1 to reproduce the vulnerability] <br>
+                2. [Describe step 2] <br>
+                3. [Describe step 3] <br><br>
+                <strong>Supporting Material/References:</strong> <br>
+                [List any additional material like screenshots, logs, or relevant URLs] <br>
+                [Include attachments or references]
+            </div>
+        </div>
+
+        <!-- New Section: Review and Submit Your Report Example -->
+        <div class="section">
+            <h2>Review and Submit Your Report</h2>
+            <p>Please review your report details before submitting your report as editing after submission is not possible.</p>
+            
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Provide a detailed description of the issue"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="summary">Summary:</label>
+                <textarea id="summary" name="summary" placeholder="Add a summary of the vulnerability"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="steps">Steps To Reproduce:</label>
+                <p>[Add details for how we can reproduce the issue]</p>
+                <div class="steps">
+                    <textarea id="step1" name="step1" placeholder="[Add step 1]"></textarea>
+                </div>
+                <div class="steps">
+                    <textarea id="step2" name="step2" placeholder="[Add step 2]"></textarea>
+                </div>
+                <div class="steps">
+                    <textarea id="step3" name="step3" placeholder="[Add step 3]"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="supporting-material">Supporting Material/References:</label>
+                <textarea id="supporting-material" name="supporting-material" placeholder="List any additional material (e.g. screenshots, logs, etc.)"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="attachment">Attachment / Reference:</label>
+                <input type="file" id="attachment" name="attachment">
+            </div>
+
+            <div class="form-group">
+                <button class="btn-submit">Submit Report</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

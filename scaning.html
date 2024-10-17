@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanning Commands and Tools</title>
+    <style>
+        body {
+            background-image: url("sca.jpg");
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #0000FF;
+            text-align: center;
+        }
+        pre {
+            background-color: #00FFFF;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        ul {
+            background-color: #000000;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        p2  {
+        color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Scanning Commands and Tools</h1>
+
+<h2 style="color: #ffffff; font-weight: bold;">Network Scanning: </h2>
+<pre>
+nmap -sV -sC -O -T4 -oA scan <IP> # Fast scan for the most 1000 TCP ports used
+nmap -sV -sC -O -T4 -p - -oA fullfastscan <IP> # Fast scan for all the ports
+nmap -sV -sC -O -p - -oA fullscan <IP> # Scan every TCP port to know exactly what is running in that machine
+nmap -sV -sC -T # Check if any of the 1000 most common UDP ports are running
+nikto -host http://example.com/ -o /results.html
+wapiti -u http://example.com/
+skipfish -o output_directory -S /path/to/dictionary example.com
+sslscan example.com
+</pre>
+<h2 style="color: #ffffff; font-weight: bold;">Vulnerability Scanning</h2>
+<pre>
+ShellShockHunter - Tool for scanning vulnerabilities
+python main.py --range '194.206.187.X,194.206.187.XXX' --check --thread 40 --ssl
+webcopilot -d http://example.com/ -a -b &lt;backend_URL&gt;
+bbot -t example.com -f subdomain-enum email-enum cloud-enum web-basic -m nmap gowitness nuclei --allow-deadly
+</pre>
+
+
+<h2 style="color: #ffffff; font-weight: bold;">CMS Scanners: </h2>
+<pre>
+vulnx -u http://example.com/ -w -d --dns -o /test
+cmseek -u https://example.com
+wpscan --url http://example.com/ -e -U -o /wpscan --api-token=WordPress Vulnerability Database API
+python WpCrack.py -t http://example.com/wp-login.php -u admin --p wordlist.txt
+joomscan -u http://example.com/
+okadminfinder -u example.com -r
+</pre>
+<h2 style="color: #ffffff; font-weight: bold;">Additional resources: </h2>
+<ul>
+    <li><a href="https://github.com/Tuhinshubhra/CMSeeK">CMSeeK</a></li>
+    <li><a href="https://github.com/22XploiterCrew-Team/WpCrack">WpCrack</a></li>
+    <li><a href="https://github.com/mIcHyAmRaNe/okadminfinder">okadminfinder</a></li>
+</ul>
+<h2 style="color: #ffffff; font-weight: bold;">Vulnerability Databases: </h2>
+<pre>
+searchsploit apache xxxx
+https://www.exploit-db.com/
+</pre>
+
+<h2 style="color: #ffffff; font-weight: bold;">"These pieces of information are just a drop in a vast ocean."</h2>
+</body>
+</html>

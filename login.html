@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+    h3 {
+       color: white;
+    }
+      h4 {
+       color: white;
+    }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            width: 100%;
+        }
+         
+body {
+  background-image: url("pit.jpg");
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  
+  /* New properties */
+  background-size: cover; /* Makes the image cover the whole background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%;
+}
+
+.link{
+     position: absolute;
+    top: 120px;    /* Adjust this value */
+    left: 703px;
+
+
+
+}
+button {
+ background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 12px 29px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline block */
+    font-size: 15px; /* Font size */
+    margin: 2px 1px; /* Margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 3px; /* Rounded corners */
+    
+     position: absolute;
+    top: 210px;    /* Adjust this value */
+    left: 0px;
+    background-color: #A9A9A9;
+    
+   padding: 15px 30px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    
+    
+    background-color: #45a049;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+
+
+ background-color: #3e8e41;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+
+}
+  
+  button:hover {
+    background-color: #45a049; /* Green */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+  
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form method="POST" action="road.html">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Login">
+    </form>
+</div>
+    <div class="link">
+      <a href="create-account.html"><h3>Create an account</h3></a>
+      <a href="forgot-password.html"><h4>Forgot Password?</h4></a>
+    </div>
+  </div>
+   <button onclick="window.location.href='donate.html';" class="donate-btn" style="top: 260px; left: 0px; background-color: #FFD140;">Donate</button>
+</body>
+</html>
